@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>proyectAr	</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="container-fluid position-sticky top-0 mb-5">
+
+		<div class="container-fluid d-flex justify-content-between mb-4">
+			<div class="icon">
+				<i class="bi bi-lightbulb" style="font-size: 2em;"></i>
+			</div>
+			<div>
+				<h1 class="text-left">proyectAr</h1>
+			</div>
+
+			<div>
+				<ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">HOME</a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link active" id="pills-projects-tab" data-bs-toggle="pill" data-bs-target="#pills-projects" type="button" role="tab" aria-controls="pills-projects" aria-selected="false">PROYECTOS</a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link" id="pills-cart-tab" data-bs-toggle="pill" data-bs-target="#pills-cart" type="button" role="tab" aria-controls="pills-cart" aria-selected="false">CARRITO</a>
+					  </li>
+				</ul>
+			</div>
+		</div>
+
+		<section class="busqueda container mb-5 mt-5 bg-primary" id="section-proyectos">
+			<div class="busqueda-proyectos p-4 container d-flex justify-content-around">
+	
+				<div class="busqueda-proyectos-nombre">
+					<label for="nombre-proyecto">Nombre de Proyecto: </label>
+					<input id="nombre-proyecto"type="text">
+				</div>
+	
+				<div class="busqueda-proyectos-categoria d-flex">
+					<label for="categoria-proyecto"> Categoria de proyecto: </label>
+					<select class="form-select" name="categoria-proyecto" id="categoria-proyecto">
+						<option value="categoria-tecnologia">Tecnologia</option>
+						<option value="categoria-medioambiente">MedioAmbiente</option>
+						<option value="categoria-gastronomia">Gastronomia</option>
+						<option value="categoria-social">Social</option>	
+					</select>
+				</div>
+			</div>
+		</section>
+
+		<div class="alert alert-primary container position-sticky top-0 hide" role="alert">
+			Has colaborado con el proyecto!
+		</div>
+
+		<div class="alert alert-danger container position-sticky top-0 remove" role="alert">
+			Te has arrepentido de colaborar con el proyecto. Que lastima.
+		</div>
+
+
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+					
+				</div>
+				<div class="tab-pane fade show active" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab">
+					<div class="container">
+						<h3>PROYECTOS</h3>
+						<hr>
+						<div class="row" id="items"></div>
+					</div>
+					<!-- <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center">
+						<div class="col d-flex justify-content-between mb-5 ">
+							<div class="card shadow mb-1 rounded" style="width: 24rem;">
+								<img class="card-img-top" src="img/burger.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Hamburgueseria BaconX</h5>
+									<p id="category"><span class="badge badge-pill badge-info">Gastronomia</span><p>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<h5 class="text-primary">Precio: <span class="precio">$ 200</span></h5>
+									<div class="d-grid gap-2">
+										<a href="#" class="btn btn-primary button">Apoyar proyecto</a>
+									</div>
+								</div>
+							</div>
+						</div> 
+		
+						<div class="col d-flex justify-content-between mb-5 ">
+							<div class="card card shadow mb-1 rounded" style="width: 24rem;">
+								<img class="card-img-top" src="img/hotdog.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Ricky HotDogs</h5>
+									<p id="category">Gastronomia<p>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<h5 class="text-primary">Precio: <span class="precio">$ 300</span></h5>
+									<div class="d-grid gap-2">
+										<a href="#" class="btn btn-primary button">Apoyar proyecto</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col d-flex justify-content-between mb-5 ">
+							<div class="card card shadow mb-1 rounded" style="width: 24rem;">
+								<img class="card-img-top" src="img/recycle.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">NoPlastic Ind.</h5>
+									<p id="category">MedioAmbiente<p>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<h5 class="text-primary">Precio: <span class="precio">$ 500</span></h5>
+									<div class="d-grid gap-2">
+										<a href="#" class="btn btn-primary button">Apoyar proyecto</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center">
+						<div class="col d-flex justify-content-between mb-5 ">
+							<div class="card shadow mb-1 rounded" style="width: 24rem;">
+								<img class="card-img-top" src="img/itsolutions.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Robots IT Solutions</h5>
+									<p id="category">Tecnologia<p>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<h5 class="text-primary">Precio: <span class="precio">$ 350</span></h5>
+									<div class="d-grid gap-2">
+										<a href="#" class="btn btn-primary button">Apoyar proyecto</a>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col d-flex justify-content-between mb-5 ">
+							<div class="card shadow mb-1 rounded" style="width: 24rem;">
+								<img class="card-img-top" src="img/hospital.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Humanity Services</h5>
+									<p id="category">Social<p>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<h5 class="text-primary">Precio: <span class="precio">$ 800</span></h5>
+									<div class="d-grid gap-2">
+										<a href="#" class="btn btn-primary button">Apoyar proyecto</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col d-flex justify-content-between mb-5 ">
+							<div class="card shadow mb-1 rounded" style="width: 24rem;">
+								<img class="card-img-top" src="img/shelter.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Patitas Animal Shelter</h5>
+									<p id="category">Social<p>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<h5 class="text-primary">Precio: <span class="precio">$ 750</span></h5>
+									<div class="d-grid gap-2">
+										<a href="#" class="btn btn-primary button">Apoyar proyecto</a>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div> -->
+				</div>
+
+				
+
+				<div class="tab-pane fade carrito" id="pills-cart" role="tabpanel" aria-labelledby="pills-cart-tab">
+					<table class="table">
+						<thead>
+						  <tr class="text-primary">
+							<th scope="col">#</th>
+							<th scope="col">PROYECTOS</th>
+							<th scope="col">MONTO</th>
+							<th scope="col">CANTIDAD</th>
+							<!-- <th scope="col">CATEGORIA</th> -->
+						  </tr>
+						</thead>
+						<tbody class="tbody">
+							<tr>
+								
+							</tr>
+					
+						</tbody>
+					  </table>
+					  <br><br>
+					  <div class="row mx-4">
+						  <div class="col">
+							  <h3 class="itemCartTotal">Total proyectos: 0</h3>
+						  </div>
+						  <div class="col d-flex justify-content-end">
+							  <button class="btn btn-success">COLABORAR</button>
+						  </div>
+					  </div>
+				</div>
+			</div>
+	</header>
+
+	<template id="template-card">
+		<!-- <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center"> -->
+			<div class="col-12 mb-2 col-md-4 d-flex justify-content-between">
+				<div class="card shadow mb-1 rounded" style="width: 24rem;">
+					<img class="card-img-top" src="" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title"></h5>
+						<p id="category"></p>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h5 class="text-primary">Precio: <span class="precio">$ 750</span></h5>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary button">Apoyar proyecto</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</template>
+	
+
+	<footer class="bg-dark p-3 mt-5 position-sticky">
+		<p class="text-center m-0 text-mute text-white">proyectAr - Coderhouse</p>
+	</footer>
+
+	<!-- <script src="sweetalert2.all.min.js"></script> -->
+	<script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+	<script
+	  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+	  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+	  crossorigin="anonymous">
+	</script>
+	<script
+	  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+	  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+	  crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	<script type = "module" src="fetch/fetch0.js"></script>
+	<script src="script.js"></script>
+	<script src="asincronismo/promesas.js"></script>
+</body>
+</html>

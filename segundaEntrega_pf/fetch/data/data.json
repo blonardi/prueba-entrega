@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "nombre": "Hamburgueseria BaconX",
+      "categoria": "Gastronomia",
+      "presentacion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "precio": "200",
+      "img": "././img/burger.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Ricky HotDogs",
+      "categoria": "Gastronomia",
+      "presentacion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "precio": "300",
+      "img": "././img/hotdog.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "NoPlastic Ind.",
+      "categoria": "Medioambiente",
+      "presentacion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "precio": "500",
+      "img": "././img/recycle.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Robots IT Solutions",
+      "categoria": "Tecnologia",
+      "presentacion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "precio": "350",
+      "img": "././img/itsolutions.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Humanity Services",
+      "categoria": "Social",
+      "presentacion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "precio": "800",
+      "img": "././img/hospital.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Patitas Animal Shelter",
+      "categoria": "Social",
+      "presentacion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "precio": "750",
+      "img": "././img/shelter.jpg"
+    }
+]
+  

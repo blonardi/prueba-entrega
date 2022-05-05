@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header, .alert{
+  z-index: 100;
+}
+
+.icon-cart{
+	font-size: 2.5rem;
+}
+
+
+.card{
+	padding: 0;
+}
+
+.card-img-top{
+	width: 100%;
+	height: 15vw;
+	object-fit: cover;
+}
+
+.carrito{
+	min-height: 70vh;
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.table__proyectos{
+	display: flex;
+	
+}
+
+.table__proyectos > img{
+	width: 9rem;
+	object-fit: contain;
+	margin-right: 20px;
+}
+
+.table__categoria > select{
+	width: 40px;
+	border: none;
+	outline: 0;
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+.hide, remove{
+	display: none;
+}
